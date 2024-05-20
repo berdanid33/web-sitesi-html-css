@@ -1,0 +1,85 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2c2c2c; 
+    color: #fff; 
+}
+
+.logo {
+    font-size: 2.5em;
+    color: #ff6347;
+}
+
+.content h1 {
+    color: #ff6347;
+}
+
+.content p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Fotoğraf Kartları */
+.photo {
+    background-color: #444;
+    border: 1px solid #555;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.photo:hover {
+    transform: scale(1.05);
+}
+
+.photo img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.photo p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.photo a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #25d366; /* WhatsApp yeşil rengi */
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.photo a:hover {
+    background-color: #128c7e; 
+}
+
+.photo a::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg');
+    background-size: cover;
+}
+
+
+@media (max-width: 600px) {
+    .photo {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .photo p, .photo a {
+        font-size: 1em;
+    }
+}
